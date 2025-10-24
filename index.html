@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Privacy Policy for Cleen Cart browser extension by Agence224." />
   <meta name="color-scheme" content="light dark" />
-  <link rel="canonical" href="https://your-domain.example/privacy" />
+  <link rel="canonical" href="https://demba-soumare.github.io/cleen-privacy-policy/" />
   <title>Privacy Policy — Cleen Cart</title>
 
   <!-- Open Graph -->
@@ -13,186 +13,74 @@
   <meta property="og:description" content="How Cleen Cart collects, uses, protects, and stores your data." />
   <meta property="og:type" content="article" />
   <meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="https://demba-soumare.github.io/cleen-privacy-policy/" />
 
   <style>
     :root{
-      --bg: #ffffff;
-      --surface: #f7f7f9;
-      --card: #ffffff;
-      --text: #1b1f23;
-      --muted: #5e6a7a;
-      --primary: #0f62fe;   /* IBM Blue vibe */
-      --primary-weak: #e7f0ff;
-      --border: #e6e8ec;
-      --radius: 14px;
-      --shadow: 0 8px 24px rgba(0,0,0,.08);
-      --shadow-soft: 0 4px 12px rgba(0,0,0,.05);
-      --focus: 0 0 0 3px rgba(15,98,254,.25);
+      --bg:#ffffff;--surface:#f7f7f9;--card:#ffffff;--text:#1b1f23;--muted:#5e6a7a;
+      --primary:#0f62fe;--primary-weak:#e7f0ff;--border:#e6e8ec;--radius:14px;
+      --shadow:0 8px 24px rgba(0,0,0,.08);--shadow-soft:0 4px 12px rgba(0,0,0,.05);
+      --focus:0 0 0 3px rgba(15,98,254,.25)
     }
     @media (prefers-color-scheme: dark){
       :root{
-        --bg: #0b0d12;
-        --surface: #0f1218;
-        --card: #121621;
-        --text: #e7ecf3;
-        --muted: #a2a9b6;
-        --primary: #4c8dff;
-        --primary-weak: #1b2a4f;
-        --border: #232a36;
-        --shadow: 0 10px 28px rgba(0,0,0,.4);
-        --shadow-soft: 0 6px 14px rgba(0,0,0,.35);
-        --focus: 0 0 0 3px rgba(76,141,255,.35);
+        --bg:#0b0d12;--surface:#0f1218;--card:#121621;--text:#e7ecf3;--muted:#a2a9b6;
+        --primary:#4c8dff;--primary-weak:#1b2a4f;--border:#232a36;
+        --shadow:0 10px 28px rgba(0,0,0,.4);--shadow-soft:0 6px 14px rgba(0,0,0,.35);
+        --focus:0 0 0 3px rgba(76,141,255,.35)
       }
     }
-    * { box-sizing: border-box; }
-    html,body { height: 100%; }
+    *{box-sizing:border-box} html,body{height:100%}
     body{
-      margin: 0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      color: var(--text);
+      margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,
+      "Apple Color Emoji","Segoe UI Emoji";color:var(--text);
       background: radial-gradient(1200px 700px at 100% -10%, var(--primary-weak) 0%, transparent 45%) no-repeat, var(--bg);
-      line-height: 1.62;
-      -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
+      line-height:1.62;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility
     }
-    a{ color: var(--primary); text-decoration: none; }
-    a:hover{ text-decoration: underline; }
-    .container{
-      max-width: 1024px;
-      margin: 0 auto;
-      padding: 24px;
-    }
-    /* Header */
-    .header{
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      backdrop-filter: blur(8px);
-      background: color-mix(in oklab, var(--bg) 85%, transparent);
-      border-bottom: 1px solid var(--border);
-    }
-    .header-inner{
-      display:flex; align-items:center; gap:16px;
-      padding: 14px 24px;
-      max-width: 1100px; margin: 0 auto;
-    }
-    .brand{
-      display:flex; align-items:center; gap:12px;
-      font-weight: 700; letter-spacing:.2px;
-    }
-    .logo{
-      inline-size: 34px; block-size: 34px;
-      border-radius: 10px;
-      background: linear-gradient(135deg, var(--primary), color-mix(in oklab, var(--primary) 40%, #7cf 60%));
-      box-shadow: var(--shadow-soft);
-      display:grid; place-items:center; color:#fff; font-size:18px;
-    }
-    .spacer{ flex:1; }
-    .mode-toggle{
-      display:inline-flex; align-items:center; gap:8px;
-      border:1px solid var(--border); border-radius: 999px;
-      padding: 6px 12px; background: var(--surface);
-      box-shadow: var(--shadow-soft);
-    }
-    .mode-toggle button{
-      border:0; background: transparent; color: var(--text);
-      padding:6px 10px; border-radius: 999px; cursor:pointer;
-      font-weight:600;
-    }
-    .mode-toggle button[aria-pressed="true"]{
-      background: var(--primary); color:#fff;
-    }
-    /* Hero */
-    .hero{
-      padding: 40px 0 12px;
-    }
-    .kicker{
-      display:inline-block; font-size: 12px; letter-spacing:.12em; text-transform:uppercase;
-      color: var(--muted); background: var(--surface); border:1px solid var(--border);
-      padding:6px 10px; border-radius: 999px;
-    }
-    h1{
-      font-size: clamp(28px, 3vw, 40px);
-      line-height: 1.15; margin: 12px 0 8px;
-    }
-    .meta{
-      display:flex; flex-wrap:wrap; gap:10px; margin: 10px 0 6px;
-    }
-    .chip{
-      display:inline-flex; align-items:center; gap:8px;
-      border:1px solid var(--border); background: var(--card);
-      padding:8px 12px; border-radius: 999px; box-shadow: var(--shadow-soft); color: var(--muted);
-      font-size: 14px;
-    }
-    /* Layout */
-    .layout{
-      display:grid; grid-template-columns: 280px 1fr; gap: 24px; align-items:start;
-    }
-    @media (max-width: 960px){ .layout{ grid-template-columns: 1fr; } }
-    /* TOC */
-    .toc{
-      position: sticky; top: 78px;
-      border:1px solid var(--border); background: var(--card);
-      padding: 16px; border-radius: var(--radius); box-shadow: var(--shadow-soft);
-    }
-    .toc h3{ margin:0 0 8px; font-size: 14px; color: var(--muted); text-transform: uppercase; letter-spacing:.08em; }
-    .toc a{ display:block; padding:8px 6px; border-radius:8px; color: var(--text); text-decoration:none; }
-    .toc a:hover{ background: var(--surface); }
-    /* Cards / content */
-    section.card{
-      background: var(--card); border:1px solid var(--border);
-      border-radius: var(--radius); box-shadow: var(--shadow);
-      padding: 22px 22px;
-      margin-bottom: 18px;
-    }
-    section.card h2{
-      margin-top: 6px; margin-bottom: 10px;
-      font-size: clamp(20px, 2.1vw, 26px);
-    }
-    section.card h3{
-      margin-top: 18px; margin-bottom: 10px; font-size: 18px;
-    }
-    p{ margin: 0 0 12px; }
-    ul{ margin: 0 0 10px 1.1rem; padding:0; }
-    .note{
-      padding: 12px 14px; border:1px dashed var(--border); border-radius:10px;
-      background: var(--surface); color: var(--muted);
-    }
-    /* Details / Accordions */
-    details{
-      border:1px solid var(--border); border-radius: 12px; background: var(--surface);
-      padding: 12px 14px; margin: 10px 0;
-    }
-    summary{
-      cursor: pointer; list-style: none; font-weight: 600;
-      display:flex; align-items:center; gap:10px;
-    }
-    summary::-webkit-details-marker{ display:none; }
-    .chev{ transition: transform .2s ease; }
-    details[open] .chev{ transform: rotate(90deg); }
-    /* Footer */
-    footer{
-      text-align:center; color: var(--muted);
-      padding: 26px 24px 44px;
-    }
-    .backtop{
-      position: fixed; right: 18px; bottom: 18px; z-index: 9;
-      border:1px solid var(--border); background: var(--card);
-      border-radius: 999px; padding: 10px 12px; box-shadow: var(--shadow-soft);
-    }
-    .backtop:focus-visible{ outline: none; box-shadow: var(--focus); }
-    /* Focus styles */
-    a:focus-visible, button:focus-visible, summary:focus-visible{ outline: none; box-shadow: var(--focus); border-radius: 8px; }
-    /* Reduced motion */
-    @media (prefers-reduced-motion: reduce){
-      * { animation: none !important; transition: none !important; }
-    }
-    /* Print */
-    @media print{
-      .header, .mode-toggle, .toc, .backtop { display:none !important; }
-      body{ background:#fff; }
-      section.card{ box-shadow: none; border-color:#bbb; }
-    }
+    a{color:var(--primary);text-decoration:none} a:hover{text-decoration:underline}
+    .container{max-width:1024px;margin:0 auto;padding:24px}
+    .header{position:sticky;top:0;z-index:10;backdrop-filter:blur(8px);
+      background: color-mix(in oklab, var(--bg) 85%, transparent);border-bottom:1px solid var(--border)}
+    .header-inner{display:flex;align-items:center;gap:16px;padding:14px 24px;max-width:1100px;margin:0 auto}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.2px}
+    .logo{inline-size:34px;block-size:34px;border-radius:10px;
+      background:linear-gradient(135deg,var(--primary),color-mix(in oklab, var(--primary) 40%, #7cf 60%));
+      box-shadow:var(--shadow-soft);display:grid;place-items:center;color:#fff;font-size:18px}
+    .spacer{flex:1}
+    .mode-toggle{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);
+      border-radius:999px;padding:6px 12px;background:var(--surface);box-shadow:var(--shadow-soft)}
+    .mode-toggle button{border:0;background:transparent;color:var(--text);padding:6px 10px;border-radius:999px;cursor:pointer;font-weight:600}
+    .mode-toggle button[aria-pressed="true"]{background:var(--primary);color:#fff}
+    .hero{padding:40px 0 12px}
+    .kicker{display:inline-block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);
+      background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:999px}
+    h1{font-size:clamp(28px,3vw,40px);line-height:1.15;margin:12px 0 8px}
+    .meta{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 6px}
+    .chip{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);background:var(--card);
+      padding:8px 12px;border-radius:999px;box-shadow:var(--shadow-soft);color:var(--muted);font-size:14px}
+    .layout{display:grid;grid-template-columns:280px 1fr;gap:24px;align-items:start}
+    @media (max-width:960px){.layout{grid-template-columns:1fr}}
+    .toc{position:sticky;top:78px;border:1px solid var(--border);background:var(--card);padding:16px;border-radius:var(--radius);box-shadow:var(--shadow-soft)}
+    .toc h3{margin:0 0 8px;font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+    .toc a{display:block;padding:8px 6px;border-radius:8px;color:var(--text)} .toc a:hover{background:var(--surface)}
+    section.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);
+      padding:22px;margin-bottom:18px}
+    section.card h2{margin-top:6px;margin-bottom:10px;font-size:clamp(20px,2.1vw,26px)}
+    section.card h3{margin-top:18px;margin-bottom:10px;font-size:18px}
+    p{margin:0 0 12px} ul{margin:0 0 10px 1.1rem;padding:0}
+    .note{padding:12px 14px;border:1px dashed var(--border);border-radius:10px;background:var(--surface);color:var(--muted)}
+    details{border:1px solid var(--border);border-radius:12px;background:var(--surface);padding:12px 14px;margin:10px 0}
+    summary{cursor:pointer;list-style:none;font-weight:600;display:flex;align-items:center;gap:10px}
+    summary::-webkit-details-marker{display:none}
+    .chev{transition:transform .2s ease} details[open] .chev{transform:rotate(90deg)}
+    footer{text-align:center;color:var(--muted);padding:26px 24px 44px}
+    .backtop{position:fixed;right:18px;bottom:18px;z-index:9;border:1px solid var(--border);background:var(--card);
+      border-radius:999px;padding:10px 12px;box-shadow:var(--shadow-soft)}
+    .backtop:focus-visible{outline:none;box-shadow:var(--focus)}
+    a:focus-visible,button:focus-visible,summary:focus-visible{outline:none;box-shadow:var(--focus);border-radius:8px}
+    @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+    @media print{.header,.mode-toggle,.toc,.backtop{display:none!important} body{background:#fff}
+      section.card{box-shadow:none;border-color:#bbb}}
   </style>
 </head>
 <body>
@@ -232,10 +120,12 @@
       <nav class="toc" aria-label="Table of contents">
         <h3>On this page</h3>
         <a href="#introduction">Introduction</a>
+        <a href="#legal-bases">Legal Bases for Processing</a>
         <a href="#info-collect">Information We Collect</a>
         <a href="#use">How We Use Your Information</a>
         <a href="#storage">Data Storage</a>
         <a href="#sharing">Data Sharing & Third Parties</a>
+        <a href="#cookies">Cookies & Tracking</a>
         <a href="#permissions">Permissions Explained</a>
         <a href="#rights">Your Rights & Choices</a>
         <a href="#retention">Data Retention</a>
@@ -247,7 +137,7 @@
         <a href="#contact">Contact</a>
         <a href="#consent">Your Consent</a>
         <a href="#technical">Technical Details</a>
-        <a href="#fr">🇫🇷 Version Française</a>
+        <a href="#fr">🇫🇷 Version Française (Intégrale)</a>
       </nav>
 
       <!-- Content -->
@@ -255,6 +145,16 @@
         <section id="introduction" class="card" aria-labelledby="h-introduction">
           <h2 id="h-introduction">Introduction</h2>
           <p>Cleen (“we”, “our”, “us”) respects your privacy and is committed to protecting your personal data. This Privacy Policy explains how we collect, use, and protect your information when you use the Cleen Cart browser extension.</p>
+          <p><strong>Data Controller:</strong> Agence224 (France). Contact: <a href="mailto:agence224.web@gmail.com">agence224.web@gmail.com</a>.</p>
+        </section>
+
+        <section id="legal-bases" class="card" aria-labelledby="h-legal-bases">
+          <h2 id="h-legal-bases">Legal Bases for Processing</h2>
+          <ul>
+            <li><strong>Performance of the service / legitimate interest</strong> – to provide core features (save products, show price history, run price checks).</li>
+            <li><strong>Consent</strong> – for optional features such as notifications and cloud sync (Firebase). You can withdraw consent anytime in the extension settings.</li>
+            <li><strong>Compliance</strong> – to meet legal obligations where applicable (e.g., security, abuse prevention).</li>
+          </ul>
         </section>
 
         <section id="info-collect" class="card" aria-labelledby="h-info-collect">
@@ -271,15 +171,16 @@
             <li><strong>Manual Product Entries</strong> and <strong>Notes</strong>.</li>
             <li><strong>Settings:</strong> Preferences including language, theme, and notification settings.</li>
           </ul>
+          <p class="note">We do not require personally identifying information to use the extension. If you enable cloud sync, we use an anonymous identifier.</p>
         </section>
 
         <section id="use" class="card" aria-labelledby="h-use">
           <h2 id="h-use">How We Use Your Information</h2>
           <ul>
             <li><strong>Display Your Saved Products</strong> in your centralized cart.</li>
-            <li><strong>Monitor Price Changes</strong> and notify you of updates.</li>
+            <li><strong>Monitor Price Changes</strong> and notify you of updates (if notifications are enabled).</li>
             <li><strong>Provide Analytics</strong> such as price history and trends.</li>
-            <li><strong>Sync Across Devices</strong> when Firebase sync is enabled.</li>
+            <li><strong>Sync Across Devices</strong> when Firebase cloud sync is enabled.</li>
           </ul>
         </section>
 
@@ -293,7 +194,7 @@
             <li>Data is associated with an anonymous user ID; no personal information required.</li>
             <li>Data is encrypted in transit using HTTPS/TLS.</li>
           </ul>
-          <p class="note">Cloud sync is entirely optional and disabled by default.</p>
+          <p class="note">Cloud sync is entirely optional and disabled by default. You can turn it off at any time.</p>
         </section>
 
         <section id="sharing" class="card" aria-labelledby="h-sharing">
@@ -302,10 +203,15 @@
           <details>
             <summary><span class="chev">▶</span> Third-Party Services</summary>
             <ul>
-              <li><strong>Firebase / Firestore (Google):</strong> Used only if cloud sync is enabled. Subject to Google’s Privacy Policy.</li>
-              <li><strong>E-commerce Websites:</strong> Accessed solely to extract product information. We do not share your cart data with these websites.</li>
+              <li><strong>Firebase / Firestore (Google):</strong> Used only if cloud sync is enabled and subject to Google’s privacy terms.</li>
+              <li><strong>E-commerce Websites:</strong> Accessed solely to extract product information; we do not share your cart data with these websites.</li>
             </ul>
           </details>
+        </section>
+
+        <section id="cookies" class="card" aria-labelledby="h-cookies">
+          <h2 id="h-cookies">Cookies & Tracking</h2>
+          <p>The Cleen Cart <strong>extension does not use cookies or third-party trackers</strong>. Any cookies set by e-commerce sites you visit are governed by their own policies. Our public policy page is hosted on GitHub Pages, which may collect minimal technical logs as described in GitHub’s privacy notice.</p>
         </section>
 
         <section id="permissions" class="card" aria-labelledby="h-permissions">
@@ -317,7 +223,7 @@
               <li><strong>storage</strong> — Save your products and settings locally.</li>
               <li><strong>tabs</strong> — Open product pages and check prices.</li>
               <li><strong>scripting</strong> — Inject scripts that extract product information.</li>
-              <li><strong>notifications</strong> — Alert you of price changes.</li>
+              <li><strong>notifications</strong> — Alert you of price changes (optional, consent-based).</li>
               <li><strong>alarms</strong> — Schedule automatic price checks.</li>
               <li><strong>host_permissions (&lt;all_urls&gt;)</strong> — Support price monitoring across any e-commerce website.</li>
             </ul>
@@ -327,7 +233,7 @@
         <section id="rights" class="card" aria-labelledby="h-rights">
           <h2 id="h-rights">Your Rights and Choices</h2>
           <ul>
-            <li><strong>Access Your Data</strong> in the extension popup.</li>
+            <li><strong>Access</strong> your data in the extension popup.</li>
             <li><strong>Export</strong> all data in JSON format.</li>
             <li><strong>Delete</strong> individual products or clear all data in <em>Settings → Data Management</em>.</li>
             <li><strong>Disable</strong> auto-detection, price monitoring, or cloud sync at any time.</li>
@@ -338,18 +244,18 @@
         <section id="retention" class="card" aria-labelledby="h-retention">
           <h2 id="h-retention">Data Retention</h2>
           <ul>
-            <li><strong>Local Data:</strong> Retained until you delete it or uninstall.</li>
-            <li><strong>Cloud Data (if enabled):</strong> Retained until you delete it through the extension or request deletion.</li>
+            <li><strong>Local Data:</strong> Retained on your device until you delete it or uninstall the extension.</li>
+            <li><strong>Cloud Data (if enabled):</strong> Retained until you delete it via the extension or request deletion by contacting us.</li>
           </ul>
         </section>
 
         <section id="security" class="card" aria-labelledby="h-security">
           <h2 id="h-security">Security</h2>
           <ul>
-            <li>Encrypted data transmission (HTTPS/TLS).</li>
-            <li>Anonymous authentication (no passwords or personal info).</li>
-            <li>Secure Firebase security rules limiting access to each user’s data.</li>
-            <li>No server-side storage of credentials.</li>
+            <li>Encrypted transmission (HTTPS/TLS).</li>
+            <li>Anonymous identifiers (no passwords or personal info required).</li>
+            <li>Strict Firebase Security Rules to isolate each user’s data.</li>
+            <li>No server-side storage of credentials by us.</li>
           </ul>
         </section>
 
@@ -362,7 +268,7 @@
             <li>Withdraw consent at any time by disabling cloud sync or uninstalling the extension.</li>
           </ul>
           <p>To exercise your rights, contact: <a href="mailto:agence224.web@gmail.com">agence224.web@gmail.com</a>.</p>
-          <p class="note">By default, we do not collect, store, or process personally identifiable information. Optional cloud data is stored anonymously and encrypted in Firebase.</p>
+          <p class="note">By default, we do not collect, store, or process personally identifiable information. Optional cloud data is stored with anonymous identifiers.</p>
         </section>
 
         <section id="children" class="card" aria-labelledby="h-children">
@@ -372,18 +278,18 @@
 
         <section id="changes" class="card" aria-labelledby="h-changes">
           <h2 id="h-changes">Changes to This Policy</h2>
-          <p>We may update this privacy policy from time to time. Significant changes will be communicated by updating the “Last Updated” date and displaying a notification in the extension.</p>
+          <p>We may update this privacy policy from time to time. Significant changes will be communicated by updating the “Last Updated” date and displaying a notice in the extension.</p>
         </section>
 
         <section id="transfers" class="card" aria-labelledby="h-transfers">
           <h2 id="h-transfers">International Data Transfers</h2>
-          <p>If you enable cloud sync, your data may be stored in Firebase servers located in various countries. Google Firebase complies with applicable data protection regulations, including the GDPR and EU-U.S. Data Privacy Framework.</p>
+          <p>If you enable cloud sync, your data may be stored in Firebase servers located in various countries. Google Firebase maintains industry-standard safeguards and participates in relevant data transfer frameworks (e.g., EU-U.S. Data Privacy Framework). We also implement contractual safeguards where applicable.</p>
         </section>
 
         <section id="contact" class="card" aria-labelledby="h-contact">
           <h2 id="h-contact">Contact Us</h2>
           <ul>
-            <li><strong>Developer:</strong> Agence224</li>
+            <li><strong>Data Controller:</strong> Agence224 (France)</li>
             <li><strong>Email:</strong> <a href="mailto:agence224.web@gmail.com">agence224.web@gmail.com</a></li>
             <li><strong>GitHub:</strong> <a href="https://github.com/Demba-Soumare/Cleen-extension" target="_blank" rel="noopener">https://github.com/Demba-Soumare/Cleen-extension</a></li>
           </ul>
@@ -391,7 +297,7 @@
 
         <section id="consent" class="card" aria-labelledby="h-consent">
           <h2 id="h-consent">Your Consent</h2>
-          <p>By using Cleen Cart, you consent to this Privacy Policy.</p>
+          <p>By using Cleen Cart, you consent to this Privacy Policy and, where applicable, to optional features you enable (e.g., notifications, cloud sync).</p>
         </section>
 
         <section id="technical" class="card" aria-labelledby="h-technical">
@@ -418,11 +324,60 @@
           </details>
         </section>
 
+        <!-- FRENCH FULL VERSION -->
         <section id="fr" class="card" aria-labelledby="h-fr">
-          <h2 id="h-fr">🇫🇷 Version Française (Résumé)</h2>
-          <p>Cleen Cart respecte votre vie privée. Vos produits sont stockés localement sur votre appareil et ne sont jamais partagés.</p>
-          <p>Si vous activez la synchronisation cloud, vos données sont stockées de manière anonyme et sécurisée via Firebase (Google).</p>
-          <p>Aucune donnée personnelle n’est collectée ni vendue. Vous pouvez à tout moment supprimer ou exporter vos données dans les paramètres de l’extension.</p>
+          <h2 id="h-fr">🇫🇷 Version Française (Intégrale)</h2>
+          <p><strong>Responsable de traitement :</strong> Agence224 (France) — Contact : <a href="mailto:agence224.web@gmail.com">agence224.web@gmail.com</a>.</p>
+          <h3>1. Objet</h3>
+          <p>Cette politique explique comment l’extension Cleen Cart collecte, utilise, stocke et protège vos données.</p>
+          <h3>2. Bases légales</h3>
+          <ul>
+            <li><strong>Intérêt légitime / exécution du service</strong> : fourniture des fonctionnalités essentielles (sauvegarde des produits, historique et vérifications de prix).</li>
+            <li><strong>Consentement</strong> : fonctionnalités optionnelles (notifications, synchronisation cloud Firebase). Vous pouvez retirer votre consentement à tout moment dans les paramètres.</li>
+            <li><strong>Obligations légales</strong> : respect des exigences applicables en matière de sécurité et de conformité.</li>
+          </ul>
+          <h3>3. Données traitées</h3>
+          <ul>
+            <li><strong>Infos produit</strong> : titre, prix, image, URL, description (pour les pages que vous enregistrez).</li>
+            <li><strong>Historique de prix</strong> et <strong>horodatages</strong> des ajouts et vérifications.</li>
+            <li><strong>Préférences</strong> : langue, thème, notifications, etc.</li>
+            <li><strong>Entrées manuelles</strong> et <strong>notes</strong> ajoutées par vous.</li>
+          </ul>
+          <p><em>Nous ne demandons aucune information personnellement identifiable pour utiliser l’extension. En cas de synchronisation cloud, un identifiant anonyme est utilisé.</em></p>
+          <h3>4. Utilisation des données</h3>
+          <ul>
+            <li>Affichage de votre panier centralisé.</li>
+            <li>Suivi et alertes de prix (si activées).</li>
+            <li>Statistiques locales (historique et tendances de prix).</li>
+            <li>Synchronisation multi-appareils (si activée).</li>
+          </ul>
+          <h3>5. Stockage</h3>
+          <p><strong>Local par défaut</strong> (API de stockage de Chrome). <strong>Cloud facultatif</strong> : Firebase/Firestore (chiffrement en transit, identifiant anonyme).</p>
+          <h3>6. Partage</h3>
+          <p>Nous <strong>ne vendons pas</strong> vos données et ne les partageons pas avec des annonceurs. Accès aux sites e-commerce uniquement pour extraire les informations produit que vous choisissez d’enregistrer.</p>
+          <h3>7. Cookies et traceurs</h3>
+          <p>L’extension <strong>n’utilise pas</strong> de cookies ni de traceurs tiers. Les cookies éventuels proviennent des sites visités et relèvent de leur propre politique. La page publique (GitHub Pages) peut collecter des journaux techniques minimaux.</p>
+          <h3>8. Permissions</h3>
+          <p>activeTab, storage, tabs, scripting, notifications (optionnel), alarms, et host_permissions (&lt;all_urls&gt;) — strictement pour les finalités décrites.</p>
+          <h3>9. Vos droits</h3>
+          <ul>
+            <li>Accéder et <strong>exporter</strong> vos données (JSON).</li>
+            <li><strong>Supprimer</strong> des éléments ou l’intégralité des données via <em>Paramètres → Gestion des données</em>.</li>
+            <li>Désactiver la détection auto, la surveillance des prix ou la synchronisation cloud à tout moment.</li>
+            <li>La désinstallation supprime les données locales.</li>
+          </ul>
+          <h3>10. Conservation</h3>
+          <p>Données locales : conservées jusqu’à suppression ou désinstallation. Données cloud (si activées) : conservées jusqu’à suppression par vous ou sur demande à notre contact.</p>
+          <h3>11. Sécurité</h3>
+          <p>Chiffrement en transit (HTTPS/TLS), identifiants anonymes, règles de sécurité Firebase strictes, aucune conservation de mots de passe par nos soins.</p>
+          <h3>12. Transferts internationaux</h3>
+          <p>En cas de cloud, les données peuvent être hébergées par Firebase dans différents pays. Firebase applique des garanties conformes (cadres de transfert applicables, mesures contractuelles et techniques).</p>
+          <h3>13. Enfants</h3>
+          <p>Service non destiné aux moins de 13 ans. Aucune collecte sciemment réalisée auprès de mineurs de moins de 13 ans.</p>
+          <h3>14. Modifications</h3>
+          <p>Nous pouvons mettre à jour cette politique. En cas de changement important, la date “Dernière mise à jour” sera modifiée et un avis pourra être affiché dans l’extension.</p>
+          <h3>15. Contact</h3>
+          <p>Agence224 — <a href="mailto:agence224.web@gmail.com">agence224.web@gmail.com</a></p>
         </section>
       </div>
     </div>
@@ -441,61 +396,32 @@
     "@type": "PrivacyPolicy",
     "name": "Cleen Cart Privacy Policy",
     "dateModified": "2025-10-15",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Agence224"
-    },
+    "publisher": { "@type": "Organization", "name": "Agence224" },
     "inLanguage": "en",
-    "url": "https://your-domain.example/privacy",
-    "about": {
-      "@type": "SoftwareApplication",
-      "name": "Cleen Cart",
-      "applicationCategory": "BrowserExtension"
-    }
+    "url": "https://demba-soumare.github.io/cleen-privacy-policy/",
+    "about": { "@type": "SoftwareApplication", "name": "Cleen Cart", "applicationCategory": "BrowserExtension" }
   }
   </script>
 
   <script>
-    // Color scheme toggle with localStorage persistence + system preference
+    // Color scheme toggle (persists in localStorage)
     (function(){
-      const root = document.documentElement;
-      const btnLight = document.getElementById('btnLight');
-      const btnAuto  = document.getElementById('btnAuto');
-      const btnDark  = document.getElementById('btnDark');
-
-      function setPressed(target){
-        [btnLight, btnAuto, btnDark].forEach(b => b.setAttribute('aria-pressed','false'));
-        target.setAttribute('aria-pressed','true');
+      const root=document.documentElement;
+      const btnLight=document.getElementById('btnLight');
+      const btnAuto=document.getElementById('btnAuto');
+      const btnDark=document.getElementById('btnDark');
+      function setPressed(t){[btnLight,btnAuto,btnDark].forEach(b=>b.setAttribute('aria-pressed','false'));t.setAttribute('aria-pressed','true')}
+      function apply(theme){
+        localStorage.setItem('cleen-theme',theme);
+        root.setAttribute('data-theme',theme);
+        root.style.colorScheme = theme==='light'?'light':theme==='dark'?'dark':'light dark';
       }
-      function apply(theme){ // 'light' | 'dark' | 'auto'
-        localStorage.setItem('cleen-theme', theme);
-        root.setAttribute('data-theme', theme);
-        // actually force colors if not auto
-        if(theme === 'light'){
-          root.style.colorScheme = 'light';
-        } else if(theme === 'dark'){
-          root.style.colorScheme = 'dark';
-        } else {
-          root.style.colorScheme = 'light dark';
-        }
-      }
-      // init
-      const saved = localStorage.getItem('cleen-theme') || 'auto';
-      apply(saved);
-      setPressed(saved === 'light' ? btnLight : saved === 'dark' ? btnDark : btnAuto);
-
-      btnLight.addEventListener('click', () => { apply('light'); setPressed(btnLight); });
-      btnAuto .addEventListener('click', () => { apply('auto');  setPressed(btnAuto ); });
-      btnDark .addEventListener('click', () => { apply('dark');  setPressed(btnDark ); });
-
-      // Respect system changes only when in auto
-      const media = window.matchMedia('(prefers-color-scheme: dark)');
-      media.addEventListener('change', () => {
-        if((localStorage.getItem('cleen-theme') || 'auto') === 'auto'){
-          apply('auto');
-          setPressed(btnAuto);
-        }
-      });
+      const saved=localStorage.getItem('cleen-theme')||'auto'; apply(saved); setPressed(saved==='light'?btnLight:saved==='dark'?btnDark:btnAuto);
+      btnLight.addEventListener('click',()=>{apply('light');setPressed(btnLight)});
+      btnAuto.addEventListener('click',()=>{apply('auto');setPressed(btnAuto)});
+      btnDark.addEventListener('click',()=>{apply('dark');setPressed(btnDark)});
+      const media=window.matchMedia('(prefers-color-scheme: dark)');
+      media.addEventListener('change',()=>{if((localStorage.getItem('cleen-theme')||'auto')==='auto'){apply('auto');setPressed(btnAuto)}})
     })();
   </script>
 </body>
